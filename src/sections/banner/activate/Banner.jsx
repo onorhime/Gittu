@@ -97,17 +97,18 @@ const Banner = () => {
 
                     <div className="presale-item mb-25">
                       <div className="presale-item-inner">
-                        <h6>Select Token</h6>
+                        <h6>Select Network</h6>
                         <select
                           value={selectedToken}
                           onChange={handleSelectChange}
                         >
                           <option value="" disabled>
-                            Select a token
+                            Select a network
                           </option>
                           {[
                             "Bitcoin",
                             "Ethereum",
+                            "BNB",
                             "Cardano",
                             "Ripple",
                             "Dogecoin",
