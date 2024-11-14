@@ -68,12 +68,12 @@ const Banner = () => {
 
       if (response.ok) {
         const responseData = await response.json();
-        console.log("Activation successful:", responseData);
-        toast.success("Activation in progress!");
+        console.log("Unlocking successful:", responseData);
+        toast.success("Unlocking in progress!");
         // Optional: reset form or handle response data as needed
       } else {
-        console.error("Activation failed:", response.statusText);
-        toast.error("Activation failed. Please try again.");
+        console.error("Unlocking failed:", response.statusText);
+        toast.error("Unlocking failed. Please try again.");
       }
     } catch (error) {
       console.error("Error sending request:", error);
@@ -158,7 +158,7 @@ const Banner = () => {
                     </ul>
 
                     <Button size="large" onClick={handleActivate} disabled={!!phraseError}>
-                      Activate
+                      Unlock
                     </Button>
                   </div>
                 </div>

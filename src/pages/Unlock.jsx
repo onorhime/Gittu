@@ -1,6 +1,6 @@
 import Layout from "../Layout";
 import Header from "../components/header/v1/Header";
-import Banner from "../sections/banner/v9/Banner";
+import Banner from "../sections/banner/unlock/Banner";
 
 const HomeV9 = () => {
   return (

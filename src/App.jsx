@@ -12,10 +12,14 @@ import HomeV9 from "./pages/HomeV9";
 import HomeV10 from "./pages/HomeV10";
 import Activate from "./pages/Activate";
 import Unlock from "./pages/Unlock";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
-    <HashRouter>
+    <>
+      <ToastContainer />
+      <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomeV9 />} />
@@ -24,6 +28,8 @@ function App() {
         
       </Routes>
     </HashRouter>
+    </>
+    
   );
 }
 
